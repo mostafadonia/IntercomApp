@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10.dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ggbridge"/>
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/register_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"/>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"/>
+        <Button
+            android:id="@+id/delete_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/register_layout"
+        android:visibility="gone"
+        layout="@layout/user_registration" />
+    <include
+        android:id="@+id/login_layout"
+        android:visibility="gone"
+        layout="@layout/pin_login" />
+    <include
+        android:id="@+id/delete_layout"
+        android:visibility="gone"
+        layout="@layout/delete_account" />
+</RelativeLayout>

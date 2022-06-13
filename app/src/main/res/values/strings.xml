@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Intercom App</string>
+    <string name="register">Create Account</string>
+    <string name="login">Login</string>
+    <string name="name">Full Name</string>
+    <string name="place">Address/Apt.</string>
+    <string name="delete">Delete Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="back">Back</string>
+    <string name="pin">Pin</string>
+    <string name="re_enter_pin">Re-enter pin</string>
+</resources>
