@@ -9,4 +9,8 @@
     <string name="back">Back</string>
     <string name="pin">Pin</string>
     <string name="re_enter_pin">Re-enter pin</string>
+    <string name="home">Home</string>
+    <string name="phone">Phone</string>
+    <string name="virtual_key">Virtual Key</string>
+    <string name="account">Account</string>
 </resources>

@@ -43,6 +43,7 @@ class MainActivity : ComponentActivity() {
         //show home page by default
         showHome()
 
+
         //when register button is clicked show register screen and hide rest
         register_home.setOnClickListener{
             showRegistration()

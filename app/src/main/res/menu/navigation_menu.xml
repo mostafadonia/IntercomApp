@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_screen"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/phone_screen"
+        android:icon="@drawable/ic_baseline_local_phone_24"
+        android:title="@string/phone"/>
+    <item
+        android:id="@+id/qr_screen"
+        android:icon="@drawable/ic_baseline_qr_code_24"
+        android:title="@string/virtual_key"/>
+    <item
+        android:id="@+id/account_screen"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/account"/>
+</menu>

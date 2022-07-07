@@ -9,8 +9,10 @@
         <entry key="app/src/main/res/drawable/ic_baseline_warning_24.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
         <entry key="app/src/main/res/layout/delete_account.xml" value="0.11727456940222898" />
+        <entry key="app/src/main/res/layout/home_screen.xml" value="0.1276595744680851" />
         <entry key="app/src/main/res/layout/pin_login.xml" value="0.1539855072463768" />
         <entry key="app/src/main/res/layout/user_registration.xml" value="0.11676798378926039" />
+        <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.18055555555555555" />
       </map>
     </option>
   </component>
