@@ -34,16 +34,4 @@
             android:text="@string/delete"/>
     </LinearLayout>
 
-    <include
-        android:id="@+id/register_layout"
-        android:visibility="gone"
-        layout="@layout/user_registration" />
-    <include
-        android:id="@+id/login_layout"
-        android:visibility="gone"
-        layout="@layout/pin_login" />
-    <include
-        android:id="@+id/delete_layout"
-        android:visibility="gone"
-        layout="@layout/delete_account" />
 </RelativeLayout>

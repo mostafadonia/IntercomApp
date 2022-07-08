@@ -13,4 +13,6 @@
     <string name="phone">Phone</string>
     <string name="virtual_key">Virtual Key</string>
     <string name="account">Account</string>
+    <string name="take_photo">Open Camera</string>
+    <string name="save_picture">Save Picture</string>
 </resources>
