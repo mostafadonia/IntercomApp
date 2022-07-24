@@ -17,6 +17,7 @@
         android:layout_marginBottom="40dp"/>
     <EditText
         android:id="@+id/name_login"
+        android:imeOptions="actionNext"
         android:layout_width="match_parent"
         android:hint="@string/name"
         android:textColor="@color/black"
@@ -34,6 +35,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="10dp"
         android:paddingLeft="20dp"
+        android:imeOptions="actionDone"
         android:background="@drawable/edittextbackground"
         android:layout_height="50dp"/>
     <Button
@@ -48,5 +50,20 @@
         android:layout_height="wrap_content"
         android:hint="@string/back"
         android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btnAuth"
+        android:text="@string/face_and_finger_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/authStatus"
+        android:text="@string/authentication_status"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

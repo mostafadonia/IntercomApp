@@ -18,6 +18,7 @@ class MainActivity : ComponentActivity() {
         loginButton = findViewById(R.id.login)
         deleteMain = findViewById(R.id.delete_main)
 
+
         //setting up database variables
         var helper = DatabaseHelper(applicationContext)
         var db = helper.readableDatabase

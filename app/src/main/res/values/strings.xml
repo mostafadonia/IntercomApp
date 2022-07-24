@@ -15,4 +15,8 @@
     <string name="account">Account</string>
     <string name="take_photo">Open Camera</string>
     <string name="save_picture">Save Picture</string>
+    <string name="authentication_status">Authentication Status</string>
+    <string name="face_and_finger_id">Face And Finger ID</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

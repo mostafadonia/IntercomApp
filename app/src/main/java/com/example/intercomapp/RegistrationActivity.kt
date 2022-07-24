@@ -14,9 +14,9 @@ import android.widget.Toast
 class RegistrationActivity : AppCompatActivity() {
 
     private lateinit var save: Button
-    private lateinit var name: EditText
-    private lateinit var address: EditText
-    private lateinit var pin: EditText
+    lateinit var name: EditText
+    lateinit var address: EditText
+    lateinit var pin: EditText
     private lateinit var back: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {

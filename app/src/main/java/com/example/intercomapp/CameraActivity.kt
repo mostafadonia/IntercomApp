@@ -17,6 +17,7 @@ class CameraActivity : AppCompatActivity() {
     private lateinit var cameraBtn:Button
     private lateinit var myImage: ImageView
     private lateinit var pictureBack:Button
+    private lateinit var pictureSave: Button
     private val cameraRequestId = 1222
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,7 @@ class CameraActivity : AppCompatActivity() {
         cameraBtn = findViewById(R.id.picture_button)
         myImage = findViewById(R.id.myImage)
         pictureBack = findViewById(R.id.picture_back)
+        pictureSave = findViewById(R.id.picture_save_button)
         //get Permission
         if(ContextCompat.checkSelfPermission(
                 applicationContext,android.Manifest.permission.CAMERA
