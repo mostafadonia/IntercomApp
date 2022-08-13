@@ -5,7 +5,7 @@ How To Save image after capture image from camera :
     private lateinit var photoUri: Uri
     var mCurrentPhotoPath: String? = null
  2 - declare the below methods for receving image intent from camera and capture , permissions
- 
+ <pre>
      private val startForResult_CaptureFromCamera =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
             if (result.resultCode == Activity.RESULT_OK) {
@@ -18,6 +18,8 @@ How To Save image after capture image from camera :
 
             }
         }
+        </pre>
+        
  private fun captureImage() {
         if (ContextCompat.checkSelfPermission(
                 requireContext(),
