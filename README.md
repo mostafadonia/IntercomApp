@@ -95,41 +95,14 @@ How To Save image after capture image from camera :
 
 
 3 - in the manifict add this:
- 
-  "<provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true"
-            android:permission="android.permission.MANAGE_DOCUMENTS">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths" />
-            <intent-filter>
-                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
-            </intent-filter>
-        </provider>"
+<pre>
+ <code>
+<img width="882" alt="Screen Shot 2022-08-14 at 1 57 00 AM" src="https://user-images.githubusercontent.com/31186483/184517132-e7448ef7-daeb-43d5-a0c2-3f3dabc8069b.png">
+</code>
+</pre>
 
  4 - create file in xml folder "provider_paths.xml" and put these code inside it like the images below
  
-<?xml version="1.0" encoding="utf-8"?>
-<paths>
-    <external-path
-        name="external"
-        path="." />
-    <external-files-path
-        name="external_files"
-        path="." />
-    <cache-path
-        name="cache"
-        path="." />
-    <external-cache-path
-        name="external_cache"
-        path="." />
-    <files-path
-        name="files"
-        path="." />
-</paths>
 
 
 <pre>
