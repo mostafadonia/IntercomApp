@@ -93,9 +93,11 @@ How To Save image after capture image from camera :
     </code>
 </pre>
 
+
+3 - in the manifict add this:
 <pre>
   <code>
-3 - in the manifict add this:
+  
   <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -109,13 +111,15 @@ How To Save image after capture image from camera :
                 <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
-        </code>
+        
+    </code>
 </pre>
 
-<pre>
-  <code>
+
  4 - create file in xml folder "provider_paths.xml" and put these code inside it 
- 
+ <pre>
+  <code>
+  
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
     <external-path
@@ -133,16 +137,19 @@ How To Save image after capture image from camera :
     <files-path
         name="files"
         path="." />
-</paths
-         </code>
+</paths>
+
+</code>
 </pre>
+
+<pre>
+ <code>
+ <img width="531" alt="Screen Shot 2022-08-14 at 1 40 01 AM" src="https://user-images.githubusercontent.com/31186483/184516787-3f37604e-6520-48c5-a7e0-f9c1c8d9c8bc.png">
+</code>
+</pre>
+
 <pre>
   <code>
- <img width="531" alt="Screen Shot 2022-08-14 at 1 40 01 AM" src="https://user-images.githubusercontent.com/31186483/184516787-3f37604e-6520-48c5-a7e0-f9c1c8d9c8bc.png">
-         </code>
-</pre>
-    <pre>
-  <code>
 <img width="1072" alt="Screen Shot 2022-08-14 at 1 40 55 AM" src="https://user-images.githubusercontent.com/31186483/184516806-6c7838b2-a23d-43cf-b60c-aab1f1004e27.png">
-         </code>
+</code>
 </pre>
