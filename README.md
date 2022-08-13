@@ -4,7 +4,8 @@ How To Save image after capture image from camera :
     private lateinit var filePhoto: File
     private lateinit var photoUri: Uri
     var mCurrentPhotoPath: String? = null
- 2- declare the below methods for receving image intent from camera and capture , permissions
+ 2 - declare the below methods for receving image intent from camera and capture , permissions
+ 
      private val startForResult_CaptureFromCamera =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
             if (result.resultCode == Activity.RESULT_OK) {
@@ -78,3 +79,40 @@ How To Save image after capture image from camera :
             null, null
         )
     }
+    
+3 - in the manifict add this:
+  <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+            </intent-filter>
+        </provider>
+        
+ 4 - <img width="531" alt="Screen Shot 2022-08-14 at 1 40 01 AM" src="https://user-images.githubusercontent.com/31186483/184516787-3f37604e-6520-48c5-a7e0-f9c1c8d9c8bc.png">
+
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="external"
+        path="." />
+    <external-files-path
+        name="external_files"
+        path="." />
+    <cache-path
+        name="cache"
+        path="." />
+    <external-cache-path
+        name="external_cache"
+        path="." />
+    <files-path
+        name="files"
+        path="." />
+</paths
+<img width="1072" alt="Screen Shot 2022-08-14 at 1 40 55 AM" src="https://user-images.githubusercontent.com/31186483/184516806-6c7838b2-a23d-43cf-b60c-aab1f1004e27.png">
