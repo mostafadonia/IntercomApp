@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IntercomApp"
         tools:targetApi="31">
-        <activity
+        <activity android:theme="@style/Theme.AppCompat.Light"
             android:name=".MainPage"
             android:exported="false" />
         <activity

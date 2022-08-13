@@ -7,38 +7,35 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainPage : AppCompatActivity() {
 
-    lateinit var bottomNav : BottomNavigationView
+    lateinit var bottomNavigationView : BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_page)
-        loadFragment(HomeFragment())
-        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
-        bottomNav.setOnNavigationItemReselectedListener {
-            when (it.itemId) {
-                R.id.home -> {
-                    loadFragment(HomeFragment())
-                    return@setOnNavigationItemReselectedListener
-                }
-                R.id.phone -> {
-                    loadFragment(PhoneFragment())
-                    return@setOnNavigationItemReselectedListener
-                }
-                R.id.qr -> {
-                    loadFragment(KeyFragment())
-                    return@setOnNavigationItemReselectedListener
-                }
-                R.id.account -> {
-                    loadFragment(AccountFragment())
-                    return@setOnNavigationItemReselectedListener
-                }
+        bottomNavigationView = findViewById(R.id.bottomNavigationView)
+
+        val firstFragment=HomeFragment()
+        val secondFragment=PhoneFragment()
+        val thirdFragment=KeyFragment()
+        val forthFragment=AccountFragment()
+
+        setCurrentFragment(firstFragment)
+
+        bottomNavigationView.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.home->setCurrentFragment(firstFragment)
+                R.id.phone->setCurrentFragment(secondFragment)
+                R.id.qr->setCurrentFragment(thirdFragment)
+                R.id.account->setCurrentFragment(forthFragment)
             }
+            true
         }
+
     }
-    private  fun loadFragment(fragment: Fragment){
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.container,fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
-    }
+
+    private fun setCurrentFragment(fragment:Fragment)=
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flFragment,fragment)
+            commit()
+        }
 }
