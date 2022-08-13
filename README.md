@@ -19,7 +19,6 @@ How To Save image after capture image from camera :
             }
         }
  private fun captureImage() {
-
         if (ContextCompat.checkSelfPermission(
                 requireContext(),
                 Manifest.permission.CAMERA
@@ -95,8 +94,8 @@ How To Save image after capture image from camera :
             </intent-filter>
         </provider>
         
- 4 - <img width="531" alt="Screen Shot 2022-08-14 at 1 40 01 AM" src="https://user-images.githubusercontent.com/31186483/184516787-3f37604e-6520-48c5-a7e0-f9c1c8d9c8bc.png">
-
+ 4 - create file in xml folder "provider_paths.xml" and put these code inside it 
+ 
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
     <external-path
@@ -115,4 +114,8 @@ How To Save image after capture image from camera :
         name="files"
         path="." />
 </paths
+ 
+ <img width="531" alt="Screen Shot 2022-08-14 at 1 40 01 AM" src="https://user-images.githubusercontent.com/31186483/184516787-3f37604e-6520-48c5-a7e0-f9c1c8d9c8bc.png">
+
+    
 <img width="1072" alt="Screen Shot 2022-08-14 at 1 40 55 AM" src="https://user-images.githubusercontent.com/31186483/184516806-6c7838b2-a23d-43cf-b60c-aab1f1004e27.png">
