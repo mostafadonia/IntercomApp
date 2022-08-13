@@ -97,8 +97,7 @@ How To Save image after capture image from camera :
 3 - in the manifict add this:
 <pre>
   <code>
-   p { color: red; }
-    body { background-color: #eee; }
+  <P>
   <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -112,7 +111,7 @@ How To Save image after capture image from camera :
                 <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
-        
+        </P>
     </code>
 </pre>
 
