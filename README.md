@@ -97,7 +97,8 @@ How To Save image after capture image from camera :
 3 - in the manifict add this:
 <pre>
   <code>
-  
+   p { color: red; }
+    body { background-color: #eee; }
   <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -119,7 +120,8 @@ How To Save image after capture image from camera :
  4 - create file in xml folder "provider_paths.xml" and put these code inside it 
  <pre>
   <code>
-  
+   p { color: red; }
+    body { background-color: #eee; }
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
     <external-path
