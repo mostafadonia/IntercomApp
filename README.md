@@ -115,12 +115,9 @@ How To Save image after capture image from camera :
     </code>
 </pre>
 
-
- 4 - create file in xml folder "provider_paths.xml" and put these code inside it 
  <pre>
   <code>
-   p { color: red; }
-    body { background-color: #eee; }
+ 4 - create file in xml folder "provider_paths.xml" and put these code inside it 
 <?xml version="1.0" encoding="utf-8"?>
 <paths>
     <external-path
