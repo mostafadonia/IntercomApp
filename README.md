@@ -19,7 +19,7 @@ How To Save image after capture image from camera :
             }
         }
         </pre>
-        
+     <pre>   
  private fun captureImage() {
         if (ContextCompat.checkSelfPermission(
                 requireContext(),
@@ -80,7 +80,7 @@ How To Save image after capture image from camera :
             null, null
         )
     }
-    
+    </pre>
 3 - in the manifict add this:
   <provider
             android:name="androidx.core.content.FileProvider"
